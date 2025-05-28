@@ -17,6 +17,7 @@ public class Cancion implements Comparable<Cancion> {
 
     private String titulo;
     private String cantante;
+    private String nombreAlbum;
 
     private String imagen;
     private int posActual; //la posicion actual en el ranking
@@ -25,15 +26,19 @@ public class Cancion implements Comparable<Cancion> {
     private int semanas;
     private List<Integer> historialPos; //lista con todas las posiciones que ha tenido en el ranking
 
-    public Cancion(String titulo, String cantante, String imagen, int posActual, int posPrevia, int semanas, List<Integer> historialPos) {
+    public Cancion(String titulo, String cantante, String imagen, int posActual, int posPrevia, int semanas, List<Integer> historialPos, String nombreAlbum) {
         this.titulo = titulo;
         this.cantante = cantante;
         this.imagen = imagen;
         this.posActual = posActual;
         this.posPrevia = posPrevia;
 
+        this.nombreAlbum = nombreAlbum;
+
         this.semanas = semanas;
         this.historialPos = historialPos;
+
+
     }
 
     public String getTitulo() {
@@ -65,6 +70,10 @@ public class Cancion implements Comparable<Cancion> {
         return historialPos;
     }
 
+    public String getNombreAlbum() {
+        return nombreAlbum;
+    }
+
     public static ArrayList<Cancion> leerCanciones() {
         ArrayList<Cancion> lista = new ArrayList<>();
 
@@ -77,7 +86,7 @@ public class Cancion implements Comparable<Cancion> {
                 for (String h:historial){
                     listaHistorial.add(Integer.valueOf(h));
                 }
-                Cancion c = new Cancion(datos[0], datos[1], datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]), Integer.valueOf(datos[5]),  listaHistorial);
+                Cancion c = new Cancion(datos[0], datos[1], datos[2], Integer.valueOf(datos[3]), Integer.valueOf(datos[4]), Integer.valueOf(datos[5]),  listaHistorial, datos[7]);
                 lista.add(c);
             }
         } catch (FileNotFoundException ex) {
