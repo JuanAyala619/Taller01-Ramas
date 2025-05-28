@@ -45,7 +45,7 @@ public class PrimaryController {
             } catch (FileNotFoundException ex) {
                 ex.printStackTrace();
             }
-            Label lbT = new Label(c.getTitulo() + " \n" + c.getCantante());//titulo y cantante
+            Label lbT = new Label(c.getTitulo() + " Album: "+ c.getNombreAlbum() +" \n" + c.getCantante());//titulo y cantante
             lbT.setStyle("-fx-font-weight: bold;-fx-font-size: 14;");
 
             hb.getChildren().addAll(lbp, iv, lbT);//agregar al hbox
@@ -68,7 +68,7 @@ public class PrimaryController {
             ex.printStackTrace();
         }
 
-        lblInfo.setText("Posición anterior: " + c.getPosPrevia() + "\n Semanas en Top: " + c.getSemanas());
+        lblInfo.setText("Album: " + c.getNombreAlbum() + "\nPosición anterior: " + c.getPosPrevia() + "\n Semanas en Top: " + c.getSemanas());
  
         System.out.println(c.getHistorialPos());
         //la actualización del historial se realiza en un hilo
