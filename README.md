@@ -1,3 +1,4 @@
 # Taller01-Ramas
-![Captura 1](Foto1.jpg)
-![Captura 2](Foto2.jpg)
+<img src="Taller01-Ramas/Imagenes/Foto1.jpg" width="400" height="400">
+<img src="Taller01-Ramas/Imagenes/Foto2.jpg" width="400" height="400">
+
