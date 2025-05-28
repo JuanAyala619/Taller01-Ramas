@@ -1,6 +1,15 @@
 # Taller01-Ramas
 
-![image alt1](https://github.com/JuanAyala619/Taller01-Ramas/blob/artista/Imagenes/Foto1.jpg)
-![image alt2](https://github.com/JuanAyala619/Taller01-Ramas/blob/artista/Imagenes/Foto2.jpg)
+## Título
+<img src="imagen/Captura_titulo.PNG" width="500" height="300">
+
+## Orden
+
+## Artista
+<img src="imagen/Foto1.jpg" width="500" height="200">  
+<img src="imagen/Foto2.jpg" width="300" height="300">
+
+## Nombre del Álbum
+<img src="imagen/rama4.png" width="300" height="300">
 
 
