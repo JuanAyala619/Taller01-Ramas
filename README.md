@@ -1,7 +1,6 @@
 # Taller01-Ramas
 
-## Cambio-de-título
-![Captura del título modificado](imagen/Captura_titulo.PNG)
+![image alt1](https://github.com/JuanAyala619/Taller01-Ramas/blob/artista/Imagenes/Foto1.jpg)
+![image alt2](https://github.com/JuanAyala619/Taller01-Ramas/blob/artista/Imagenes/Foto2.jpg)
 
-## Añadiendo nombre de álbum
-<img src="imagen/rama4.png" width="400" height="400">
+
